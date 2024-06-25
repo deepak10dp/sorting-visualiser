@@ -1,0 +1,208 @@
+/* array-container */
+.array-container {
+  height: 500px;
+  margin: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.array-bar {
+  display: inline-block;
+  margin: 0 1px;
+}
+
+/* Nav */
+nav {
+  margin: 0;
+  width: 100%
+}
+
+/* arraySize */
+.arraySize {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.arraySize h1 {
+  color: #03e9f4;
+  font-size: 1.5rem;
+}
+
+.arraySize input {
+  cursor: pointer;
+  width: 200px;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+/* .arraySize p {
+  margin-top: 12px;
+  margin-left: 4px;
+  font-size: 0.7rem;
+  color: #03e9f4;
+} */
+
+
+/* buttons */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: white;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  position: relative;
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 10px 0;
+  color: #0a1112;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 5px;
+
+}
+
+.mainBtn {
+  color: rgb(239, 17, 17)
+}
+
+button:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.mainBtn:hover {
+  background: red;
+  color: #050801;
+  box-shadow: 0 0 5px red,
+    0 0 25px red,
+    0 0 50px red,
+    0 0 200px red;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+button span {
+  position: absolute;
+  display: block;
+}
+
+button span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+.mainBtn span:nth-child(1) {
+  background: linear-gradient(90deg, transparent, red);
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+.mainBtn span:nth-child(2) {
+  background: linear-gradient(180deg, transparent, red);
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+button span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+
+.mainBtn span:nth-child(3) {
+  background: linear-gradient(270deg, transparent, red);
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+.mainBtn span:nth-child(4) {
+  background: linear-gradient(360deg, transparent, red);
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
